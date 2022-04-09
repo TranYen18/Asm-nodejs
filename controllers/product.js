@@ -6,7 +6,7 @@ export const create = async (req, res) => {
         res.json(product)
     } catch (error) {
         res.status(400).json({
-            message: "Lỗi  không tìm thấy sản phẩm"
+            message: "Lỗi  không thêm được sản phẩm"
 
         })
     }

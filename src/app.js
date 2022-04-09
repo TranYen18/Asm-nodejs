@@ -16,11 +16,11 @@ app.use(express.json());
 app.use("/api", productRoute);
 app.use("/api", authRoute);
 
-mongoose.connect('mongodb://localhost:27017/asignment')
+mongoose.connect('mongodb://localhost:27017/assignment')
     .then(() => console.log("Kết nối db thành công"))
     .catch((error) => console.log(error));
 
-const PORT = 8000;
+const PORT = 8001;
 app.listen(PORT, () => {
     console.log("Server is running port", PORT);
 })
